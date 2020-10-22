@@ -23,6 +23,9 @@ export default class RecipeService {
   getRecipes() {
     return this.recipes.slice();
   }
+  getRecipe(index:number){
+    return this.recipes.slice()[index]
+  }
   addIngredientToShoppingList(ingredients: Ingredient[]) {
     this.shoppinglistservice.addIngredients(ingredients);
   }
